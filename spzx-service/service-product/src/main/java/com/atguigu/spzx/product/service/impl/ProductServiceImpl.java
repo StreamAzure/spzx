@@ -18,4 +18,9 @@ public class ProductServiceImpl implements ProductService {
     public List<ProductSku> findProductSkuBySale() {
         return productSkuMapper.findProductSkuBySale();
     }
+
+    @Override
+    public ProductSku getBySkuId(Long skuId) {
+        return productSkuMapper.getById(skuId);
+    }
 }
